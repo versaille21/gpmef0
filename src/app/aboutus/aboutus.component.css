@@ -1,0 +1,144 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat|Open+Sans";
+.content,
+.section-title {
+  font-family: "Montserrat", sans-serif;
+}
+
+[data-aos^="fade"][data-aos^="fade"].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
+}
+
+section {
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #ff8303;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #fe6e00;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+[data-aos][data-aos][data-aos-delay="100"].aos-animate,
+body[data-aos-delay="100"] [data-aos].aos-animate {
+  transition-delay: 0.1s;
+}
+
+[data-aos^="fade"][data-aos^="fade"].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
+}
+
+[data-aos][data-aos][data-aos-delay="100"],
+body[data-aos-delay="100"] [data-aos] {
+  transition-delay: 0;
+}
+
+[data-aos][data-aos][data-aos-easing="ease-in-out"],
+body[data-aos-easing="ease-in-out"] [data-aos] {
+  transition-timing-function: ease-in-out;
+}
+
+[data-aos][data-aos][data-aos-duration="1000"],
+body[data-aos-duration="1000"] [data-aos] {
+  transition-duration: 1s;
+}
+
+[data-aos^="fade"][data-aos^="fade"] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+.pt-4 {
+  padding-top: 1.5rem !important;
+}
+.fst-italic {
+  font-style: italic !important;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.features .content ul {
+  list-style: none;
+  padding: 0;
+}
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+ol,
+ul {
+  padding-left: 2rem;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.features .content ul li {
+  padding-bottom: 10px;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.features .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #f8ac3b;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+.nameTitleStructure {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #d43185;
+  font-size: 20px;
+}
+
+.decretNumber {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
