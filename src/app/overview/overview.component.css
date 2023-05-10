@@ -67,3 +67,17 @@ resize-triggers,
   background: #eee;
   overflow: auto;
 }
+#card-prog1{
+  background-color: #F2CEC2;
+}
+#card-prog2{
+  background-color: #DEF4E1;
+}
+
+#card-prog3{
+  background-color: #F5DAEA;
+}
+
+#card-prog4{
+  background-color: #D5DAEF;
+}
