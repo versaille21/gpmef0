@@ -1613,8 +1613,8 @@
             </div>
             <ul class="p-0 m-0">
 
-              <li class="d-flex mb-4 pb-1">
-                <div class="avatar flex-shrink-0 me-3">
+              <li class="d-flex mb-4 pb-1" *ngFor="let items of statprog1">
+                <div class="avatar flex-shrink-0 me-3" >
                   <span class="avatar-initial rounded bg-label-primary"
                     ><i class="bi bi-car-front"></i></span>
                 </div>
@@ -1622,72 +1622,17 @@
                   class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2"
                 >
                   <div class="me-2">
-                    <h6 class="mb-0">Véhicule</h6>
+                    <h6 class="mb-0">{{items.lib_categorie}}</h6>
                     <small class="text-muted">Voitures, Motos</small>
                   </div>
                   <div class="user-progress">
-                    <small class="fw-semibold">250</small>
+                    <small class="fw-semibold">{{items.nbreBien}}</small>
                   </div>
                 </div>
               </li>
 
 
-              <li class="d-flex mb-4 pb-1">
-                <div class="avatar flex-shrink-0 me-3">
-                  <span class="avatar-initial rounded bg-label-success"
-                    ><i class="bx bx-closet"></i
-                  ></span>
-                </div>
-                <div
-                  class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2"
-                >
-                  <div class="me-2">
-                    <h6 class="mb-0">Mobilier de bureau</h6>
-                    <small class="text-muted">Bureaux, Chaises, Meubles, ...</small>
-                  </div>
-                  <div class="user-progress">
-                    <small class="fw-semibold">1500</small>
-                  </div>
-                </div>
-              </li>
-
-              <li class="d-flex mb-4 pb-1">
-                <div class="avatar flex-shrink-0 me-3">
-                  <span class="avatar-initial rounded bg-label-info"
-                    ><i class="bi bi-fan"></i>
-                  </span>
-                </div>
-                <div
-                  class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2"
-                >
-                  <div class="me-2">
-                    <h6 class="mb-0">Matériel de bureau</h6>
-                    <small class="text-muted">Climatiseurs, Photocopieurs, ...</small>
-                  </div>
-                  <div class="user-progress">
-                    <small class="fw-semibold">849k</small>
-                  </div>
-                </div>
-              </li>
-
-              <li class="d-flex">
-                <div class="avatar flex-shrink-0 me-3">
-                  <span class="avatar-initial rounded bg-label-secondary"
-                    ><i class="bx bx-football"></i
-                  ></span>
-                </div>
-                <div
-                  class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2"
-                >
-                  <div class="me-2">
-                    <h6 class="mb-0">Matériel informatique</h6>
-                    <small class="text-muted">Ordinateurs, Imprimantes, ...</small>
-                  </div>
-                  <div class="user-progress">
-                    <small class="fw-semibold">3000</small>
-                  </div>
-                </div>
-              </li>
+          
 
             </ul>
           </div>
