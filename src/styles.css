@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+.p-0 {
+  padding: 0 !important;
+}
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #ff8303;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #fe6e00;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+section {
+  padding: 40px 0;
+  overflow: hidden;
+}

@@ -5,6 +5,11 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { OverviewComponent } from './overview/overview.component';
+import { HttpClientModule } from '@angular/common/http';
+import { OverviewService } from './services/overviews.service';
+import { StatsComponent } from './statistique/stats.component';
+import { StructComponent } from './statistique/struct/struct.component';
+import { DetailsbiensComponent } from './statistique/detailsbiens/detailsbiens.component';
 
 @NgModule({
   // for declare all components and pipes
@@ -14,15 +19,18 @@ import { OverviewComponent } from './overview/overview.component';
     FooterComponent,
     AboutusComponent,
     OverviewComponent,
+    StatsComponent,
+    StructComponent,
+    DetailsbiensComponent,
   ],
 
   // All modules
-  imports: [BrowserModule],
+  imports: [BrowserModule, HttpClientModule],
 
   // Only and only all main component
   bootstrap: [AppComponent],
 
   // All services
-  providers: [],
+  providers: [OverviewService],
 })
 export class AppModule {}
