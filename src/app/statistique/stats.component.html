@@ -27,10 +27,13 @@
               class="form-select form-select-sm"
               aria-label=".form-select-sm example"
             >
-              <option selected>-----Sélectionnez un programme------</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option selected>-----Programme------</option>
+              <option
+                *ngFor="let item of allProgram"
+                [value]="item.id_Programme"
+              >
+                {{ item.intitule_programme | colorPipesCall }}
+              </option>
             </select>
           </div>
           <div class="col-sm-8 col-md-3">
@@ -38,7 +41,7 @@
               class="form-select form-select-sm"
               aria-label=".form-select-sm example"
             >
-              <option selected>-----Sélectionnez une structure-----</option>
+              <option selected>-----Structure-----</option>
               <option value="1"></option>
             </select>
           </div>
@@ -47,7 +50,7 @@
               class="form-select form-select-sm"
               aria-label=".form-select-sm example"
             >
-              <option selected>-----Selectionnez une catégorie-----</option>
+              <option selected>-----Catégorie-----</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
@@ -59,7 +62,7 @@
               class="form-select form-select-sm"
               aria-label=".form-select-sm example"
             >
-              <option selected>-----Sélectionnez une année-----</option>
+              <option selected>-----Année-----</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>

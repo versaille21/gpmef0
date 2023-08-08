@@ -10,6 +10,7 @@ import { OverviewService } from './services/overviews.service';
 import { StatsComponent } from './statistique/stats.component';
 import { StructComponent } from './statistique/struct/struct.component';
 import { DetailsbiensComponent } from './statistique/detailsbiens/detailsbiens.component';
+import { ColorPipe } from './pipes/ColorCustomPipe.pipe';
 
 @NgModule({
   // for declare all components and pipes
@@ -22,6 +23,7 @@ import { DetailsbiensComponent } from './statistique/detailsbiens/detailsbiens.c
     StatsComponent,
     StructComponent,
     DetailsbiensComponent,
+    ColorPipe,
   ],
 
   // All modules
